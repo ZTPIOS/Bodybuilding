@@ -16,6 +16,7 @@
 		47FF38D31CC20F650085961B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47FF38D11CC20F650085961B /* LaunchScreen.storyboard */; };
 		47FF38DE1CC20F650085961B /* BodybuildingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FF38DD1CC20F650085961B /* BodybuildingTests.m */; };
 		47FF38E91CC20F650085961B /* BodybuildingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FF38E81CC20F650085961B /* BodybuildingUITests.m */; };
+		A50EF20E85E41661919D2A83 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEEF785C2916B16C732A9E9E /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,9 @@
 		47FF38E41CC20F650085961B /* BodybuildingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BodybuildingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47FF38E81CC20F650085961B /* BodybuildingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BodybuildingUITests.m; sourceTree = "<group>"; };
 		47FF38EA1CC20F650085961B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BC4B9D45CEE28FC180045C6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		EDFA0BE661D412902CD85AE3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FEEF785C2916B16C732A9E9E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A50EF20E85E41661919D2A83 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +92,8 @@
 				47FF38DC1CC20F650085961B /* BodybuildingTests */,
 				47FF38E71CC20F650085961B /* BodybuildingUITests */,
 				47FF38BE1CC20F640085961B /* Products */,
+				756B39B9523A55339253C9E8 /* Pods */,
+				F4EDA1B41074374367D02BF1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,6 +150,23 @@
 			path = BodybuildingUITests;
 			sourceTree = "<group>";
 		};
+		756B39B9523A55339253C9E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6BC4B9D45CEE28FC180045C6 /* Pods.debug.xcconfig */,
+				EDFA0BE661D412902CD85AE3 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F4EDA1B41074374367D02BF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FEEF785C2916B16C732A9E9E /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 47FF38ED1CC20F650085961B /* Build configuration list for PBXNativeTarget "Bodybuilding" */;
 			buildPhases = (
+				B04C43B5E0167634F1B0E3C4 /* Check Pods Manifest.lock */,
 				47FF38B91CC20F640085961B /* Sources */,
 				47FF38BA1CC20F640085961B /* Frameworks */,
 				47FF38BB1CC20F640085961B /* Resources */,
+				B3E005786219587E8F245F14 /* Embed Pods Frameworks */,
+				45FF813BCE5421602C9BD09F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,6 +294,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		45FF813BCE5421602C9BD09F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B04C43B5E0167634F1B0E3C4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B3E005786219587E8F245F14 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		47FF38B91CC20F640085961B /* Sources */ = {
@@ -413,6 +488,7 @@
 		};
 		47FF38EE1CC20F650085961B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BC4B9D45CEE28FC180045C6 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Bodybuilding/Info.plist;
@@ -424,6 +500,7 @@
 		};
 		47FF38EF1CC20F650085961B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDFA0BE661D412902CD85AE3 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Bodybuilding/Info.plist;
@@ -500,6 +577,7 @@
 				47FF38EF1CC20F650085961B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47FF38F01CC20F650085961B /* Build configuration list for PBXNativeTarget "BodybuildingTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +586,7 @@
 				47FF38F21CC20F650085961B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47FF38F31CC20F650085961B /* Build configuration list for PBXNativeTarget "BodybuildingUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +595,7 @@
 				47FF38F51CC20F650085961B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
