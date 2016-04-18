@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47FDB9361CC4AE7100203DA1 /* StorageMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FDB9331CC4AE7100203DA1 /* StorageMgr.m */; };
+		47FDB9371CC4AE7100203DA1 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FDB9351CC4AE7100203DA1 /* Utilities.m */; };
+		47FDB9421CC4AF3200203DA1 /* AppAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FDB93B1CC4AF3200203DA1 /* AppAPIClient.m */; };
+		47FDB9431CC4AF3200203DA1 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FDB93D1CC4AF3200203DA1 /* NSData+Base64.m */; };
+		47FDB9441CC4AF3200203DA1 /* NSString+Crypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FDB93F1CC4AF3200203DA1 /* NSString+Crypt.m */; };
+		47FDB9451CC4AF3200203DA1 /* RequestAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FDB9411CC4AF3200203DA1 /* RequestAPI.m */; };
+		47FDB9471CC4AF4600203DA1 /* Openssl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47FDB9461CC4AF4600203DA1 /* Openssl.framework */; };
+		47FDB94A1CC4AF6500203DA1 /* BasicEncodingRules.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FDB9491CC4AF6500203DA1 /* BasicEncodingRules.m */; };
 		47FF38C21CC20F640085961B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FF38C11CC20F640085961B /* main.m */; };
 		47FF38C51CC20F640085961B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FF38C41CC20F640085961B /* AppDelegate.m */; };
 		47FF38C81CC20F640085961B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FF38C71CC20F640085961B /* ViewController.m */; };
@@ -37,6 +45,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		47FDB9321CC4AE7100203DA1 /* StorageMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageMgr.h; sourceTree = "<group>"; };
+		47FDB9331CC4AE7100203DA1 /* StorageMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageMgr.m; sourceTree = "<group>"; };
+		47FDB9341CC4AE7100203DA1 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		47FDB9351CC4AE7100203DA1 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		47FDB9381CC4AE9C00203DA1 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		47FDB93A1CC4AF3200203DA1 /* AppAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppAPIClient.h; sourceTree = "<group>"; };
+		47FDB93B1CC4AF3200203DA1 /* AppAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppAPIClient.m; sourceTree = "<group>"; };
+		47FDB93C1CC4AF3200203DA1 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		47FDB93D1CC4AF3200203DA1 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		47FDB93E1CC4AF3200203DA1 /* NSString+Crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Crypt.h"; sourceTree = "<group>"; };
+		47FDB93F1CC4AF3200203DA1 /* NSString+Crypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Crypt.m"; sourceTree = "<group>"; };
+		47FDB9401CC4AF3200203DA1 /* RequestAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestAPI.h; sourceTree = "<group>"; };
+		47FDB9411CC4AF3200203DA1 /* RequestAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestAPI.m; sourceTree = "<group>"; };
+		47FDB9461CC4AF4600203DA1 /* Openssl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Openssl.framework; path = Bodybuilding/Openssl.framework; sourceTree = "<group>"; };
+		47FDB9481CC4AF6500203DA1 /* BasicEncodingRules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicEncodingRules.h; path = "SCZ-BasicEncodingRules/BasicEncodingRules.h"; sourceTree = "<group>"; };
+		47FDB9491CC4AF6500203DA1 /* BasicEncodingRules.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicEncodingRules.m; path = "SCZ-BasicEncodingRules/BasicEncodingRules.m"; sourceTree = "<group>"; };
+		47FDB94B1CC4AFA500203DA1 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		47FF38BD1CC20F640085961B /* Bodybuilding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bodybuilding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47FF38C11CC20F640085961B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		47FF38C31CC20F640085961B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -64,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47FDB9471CC4AF4600203DA1 /* Openssl.framework in Frameworks */,
 				A50EF20E85E41661919D2A83 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,6 +111,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47FDB92C1CC4AE0500203DA1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				47FF38C61CC20F640085961B /* ViewController.h */,
+				47FF38C71CC20F640085961B /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		47FDB92D1CC4AE0C00203DA1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				47FF38C91CC20F650085961B /* Main.storyboard */,
+				47FF38D11CC20F650085961B /* LaunchScreen.storyboard */,
+				47FF38CF1CC20F650085961B /* Assets.xcassets */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		47FDB92E1CC4AE1200203DA1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				47FF38CC1CC20F650085961B /* Bodybuilding.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		47FDB92F1CC4AE1B00203DA1 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				47FDB9321CC4AE7100203DA1 /* StorageMgr.h */,
+				47FDB9331CC4AE7100203DA1 /* StorageMgr.m */,
+				47FDB9341CC4AE7100203DA1 /* Utilities.h */,
+				47FDB9351CC4AE7100203DA1 /* Utilities.m */,
+				47FDB93A1CC4AF3200203DA1 /* AppAPIClient.h */,
+				47FDB93B1CC4AF3200203DA1 /* AppAPIClient.m */,
+				47FDB93C1CC4AF3200203DA1 /* NSData+Base64.h */,
+				47FDB93D1CC4AF3200203DA1 /* NSData+Base64.m */,
+				47FDB93E1CC4AF3200203DA1 /* NSString+Crypt.h */,
+				47FDB93F1CC4AF3200203DA1 /* NSString+Crypt.m */,
+				47FDB9401CC4AF3200203DA1 /* RequestAPI.h */,
+				47FDB9411CC4AF3200203DA1 /* RequestAPI.m */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		47FDB9301CC4AE2600203DA1 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				47FDB9381CC4AE9C00203DA1 /* Constants.h */,
+			);
+			name = Constant;
+			sourceTree = "<group>";
+		};
+		47FDB9311CC4AE3700203DA1 /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				47FDB9391CC4AF0000203DA1 /* SCZ-BasicEncodingRules */,
+			);
+			name = 3rd;
+			sourceTree = "<group>";
+		};
+		47FDB9391CC4AF0000203DA1 /* SCZ-BasicEncodingRules */ = {
+			isa = PBXGroup;
+			children = (
+				47FDB9481CC4AF6500203DA1 /* BasicEncodingRules.h */,
+				47FDB9491CC4AF6500203DA1 /* BasicEncodingRules.m */,
+			);
+			name = "SCZ-BasicEncodingRules";
+			sourceTree = "<group>";
+		};
 		47FF38B41CC20F640085961B = {
 			isa = PBXGroup;
 			children = (
@@ -110,15 +207,12 @@
 		47FF38BF1CC20F640085961B /* Bodybuilding */ = {
 			isa = PBXGroup;
 			children = (
-				47FF38C31CC20F640085961B /* AppDelegate.h */,
-				47FF38C41CC20F640085961B /* AppDelegate.m */,
-				47FF38C61CC20F640085961B /* ViewController.h */,
-				47FF38C71CC20F640085961B /* ViewController.m */,
-				47FF38C91CC20F650085961B /* Main.storyboard */,
-				47FF38CF1CC20F650085961B /* Assets.xcassets */,
-				47FF38D11CC20F650085961B /* LaunchScreen.storyboard */,
-				47FF38D41CC20F650085961B /* Info.plist */,
-				47FF38CC1CC20F650085961B /* Bodybuilding.xcdatamodeld */,
+				47FDB9311CC4AE3700203DA1 /* 3rd */,
+				47FDB9301CC4AE2600203DA1 /* Constant */,
+				47FDB92F1CC4AE1B00203DA1 /* Utility */,
+				47FDB92E1CC4AE1200203DA1 /* Model */,
+				47FDB92D1CC4AE0C00203DA1 /* View */,
+				47FDB92C1CC4AE0500203DA1 /* Controller */,
 				47FF38C01CC20F640085961B /* Supporting Files */,
 			);
 			path = Bodybuilding;
@@ -127,7 +221,11 @@
 		47FF38C01CC20F640085961B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				47FF38C31CC20F640085961B /* AppDelegate.h */,
+				47FF38C41CC20F640085961B /* AppDelegate.m */,
+				47FDB94B1CC4AFA500203DA1 /* PrefixHeader.pch */,
 				47FF38C11CC20F640085961B /* main.m */,
+				47FF38D41CC20F650085961B /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -162,6 +260,7 @@
 		F4EDA1B41074374367D02BF1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				47FDB9461CC4AF4600203DA1 /* Openssl.framework */,
 				FEEF785C2916B16C732A9E9E /* libPods.a */,
 			);
 			name = Frameworks;
@@ -348,10 +447,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47FDB9451CC4AF3200203DA1 /* RequestAPI.m in Sources */,
+				47FDB9371CC4AE7100203DA1 /* Utilities.m in Sources */,
+				47FDB94A1CC4AF6500203DA1 /* BasicEncodingRules.m in Sources */,
+				47FDB9441CC4AF3200203DA1 /* NSString+Crypt.m in Sources */,
 				47FF38C81CC20F640085961B /* ViewController.m in Sources */,
+				47FDB9421CC4AF3200203DA1 /* AppAPIClient.m in Sources */,
 				47FF38CE1CC20F650085961B /* Bodybuilding.xcdatamodeld in Sources */,
 				47FF38C51CC20F640085961B /* AppDelegate.m in Sources */,
+				47FDB9431CC4AF3200203DA1 /* NSData+Base64.m in Sources */,
 				47FF38C21CC20F640085961B /* main.m in Sources */,
+				47FDB9361CC4AE7100203DA1 /* StorageMgr.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +597,12 @@
 			baseConfigurationReference = 6BC4B9D45CEE28FC180045C6 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Bodybuilding",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Bodybuilding/PrefixHeader.pch;
 				INFOPLIST_FILE = Bodybuilding/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = js.Bodybuilding;
@@ -503,6 +615,12 @@
 			baseConfigurationReference = EDFA0BE661D412902CD85AE3 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Bodybuilding",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Bodybuilding/PrefixHeader.pch;
 				INFOPLIST_FILE = Bodybuilding/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = js.Bodybuilding;
